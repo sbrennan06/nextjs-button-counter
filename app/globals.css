@@ -24,3 +24,35 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.counter {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 12px;
+  max-width: 420px;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.counter button {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f7f7f7;
+  cursor: pointer;
+}
+
+.counter button:hover:not(:disabled) {
+  background: #eee;
+}
+
+.counter button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

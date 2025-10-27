@@ -7,6 +7,8 @@ export default function Counter() {
     <div>
       <p aria-live="polite">Count: {count}</p>
       <button onClick={() => setCount(count + 1)}>+1</button>
+      <button onClick={() => setCount(count - 1)}>-1</button>
+      <button onClick={() => setCount(0)}>Reset</button>
     </div>
   );
 }
