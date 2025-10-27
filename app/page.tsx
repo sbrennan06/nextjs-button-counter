@@ -7,6 +7,7 @@ export default function Page() {
         <h1>Button Counter</h1>
         <p>Click the button!</p>
         <Counter />
+        {/* <Counter initialCount={5} initialStep={2} /> */}
       </main>
     </>
   );

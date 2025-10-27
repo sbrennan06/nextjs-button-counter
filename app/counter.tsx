@@ -1,9 +1,15 @@
 "use client";
 import { useState } from "react";
 
-export default function Counter() {
-  const [count, setCount] = useState(0);
-  const [step, setStep] = useState(1);
+export default function Counter({
+  initialCount = 0,
+  initialStep = 1,
+}: {
+  initialCount?: number;
+  initialStep?: number;
+}) {
+  const [count, setCount] = useState(initialCount);
+  const [step, setStep] = useState(initialStep);
 
   const decDisabled = count - step < 0;
 
