@@ -11,3 +11,4 @@ It displays a number, lets you increase or decrease it by a chosen step, and res
 npm install
 npm run dev
 ```
+s
