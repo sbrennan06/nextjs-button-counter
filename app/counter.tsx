@@ -38,7 +38,7 @@ export default function Counter({
           >
             -{step}
           </button>
-          <button type="button" onClick={() => setCount(0)}>
+          <button type="button" onClick={() => setCount(initialCount)}>
             Reset
           </button>
         </div>
